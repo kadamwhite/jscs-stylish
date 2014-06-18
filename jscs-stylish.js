@@ -1,0 +1,42 @@
+'use strict';
+var chalk = require( 'chalk' );
+var table = require( 'text-table' );
+
+/**
+ * @param {Errors[]} errorsCollection
+ */
+module.exports = function( errorsCollection ) {
+  var errorCount = 0;
+  /**
+   * Formatting every error set.
+   */
+  var report = errorsCollection.map( function( errors ) {
+    if ( ! errors.isEmpty() ) {
+      errorCount += errors.getErrorCount();
+
+      var output = errors.getErrorList().map( function( error ) {
+        return [
+          '',
+          chalk.gray( error.line ),
+          chalk.gray( error.column ),
+          chalk.blue( error.message )
+        ];
+      } );
+
+      return [
+        '',
+        chalk.underline( errors.getFilename() ),
+        table( output ),
+        ''
+      ].join('\n');
+    }
+    return '';
+  });
+
+  if ( errorCount ) {
+    // Output results
+    console.log( report.join('') );
+  } else {
+    console.log( 'No code style errors found.' );
+  }
+};

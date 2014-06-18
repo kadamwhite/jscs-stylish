@@ -1,0 +1,15 @@
+{
+  "name": "jscs-stylish",
+  "version": "0.1.0",
+  "description": "A JSCS reporter inspired by jshint-stylish",
+  "main": "jscs-stylish.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^0.4.0",
+    "text-table": "^0.2.0"
+  }
+}
