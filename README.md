@@ -17,7 +17,9 @@ Example usage within the configuration block for [grunt-jscs-checker](https://ww
 jscs: {
     options: {
         config: '.jscsrc',
-        reporter: require( 'jscs-stylish' )
+        // `reporter` requires a directory path string argument:
+        // the .path property contains the path to the reporter module
+        reporter: require( 'jscs-stylish' ).path
     },
     all: {
         src: [ js/**/*.js ]

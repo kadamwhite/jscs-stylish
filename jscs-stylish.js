@@ -42,6 +42,4 @@ module.exports = function( errorsCollection ) {
 };
 
 // Expose path to reporter so it can be configured in e.g. grunt-jscs-checker
-module.exports.toString = function() {
-  return __dirname;
-};
+module.exports.path = __dirname;
