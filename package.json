@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "K.Adam White",
+    "email": "adam@kadamwhite.com",
+    "url": "http://www.kadamwhite.com"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kadamwhite/jscs-stylish"
+  },
   "dependencies": {
     "chalk": "^0.4.0",
     "text-table": "^0.2.0"
