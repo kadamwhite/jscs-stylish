@@ -1,6 +1,6 @@
 {
   "name": "jscs-stylish",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A JSCS reporter inspired by jshint-stylish",
   "main": "jscs-stylish.js",
   "scripts": {

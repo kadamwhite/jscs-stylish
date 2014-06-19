@@ -40,3 +40,8 @@ module.exports = function( errorsCollection ) {
     console.log( 'No code style errors found.' );
   }
 };
+
+// Expose path to reporter so it can be configured in e.g. grunt-jscs-checker
+module.exports.toString = function() {
+  return __dirname;
+};
