@@ -19,7 +19,7 @@ module.exports = function( errorsCollection ) {
           '',
           chalk.gray( error.line ),
           chalk.gray( error.column ),
-          chalk.blue( error.message )
+          process.platform !== 'win32' ? chalk.blue( error.message ) : chalk.cyan( error.message )
         ];
       } );
 
