@@ -7,7 +7,7 @@ This is a reporter for the [JSCS]() JavaScript Code  [jshint-stylish](https://gi
 ## Install
 
 ```bash
-npm install --save-dev jshint-stylish
+npm install --save-dev jscs-stylish
 ```
 
 ## Usage
