@@ -1,6 +1,6 @@
 # A Stylish JSCS Reporter
 
-This is a reporter for the [JSCS]() JavaScript Code  [jshint-stylish](https://github.com/sindresorhus/jshint-stylish)
+This is a reporter for the [JSCS](https://github.com/jscs-dev/node-jscs) JavaScript Code style checker, modeled on the [jshint-stylish](https://github.com/sindresorhus/jshint-stylish) reporter for [JSHint](http://www.jshint.com/).
 
 ![JSCS-Stylish reporter output](jscs-stylish-screenshot.png)
 
